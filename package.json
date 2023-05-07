@@ -2,9 +2,16 @@
   "name": "@dreamofice/ts-base",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/DreamOfIce/ts-base#readme",
+  "bugs": {
+    "url": "https://github.com/DreamOfIce/ts-base/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DreamOfIce/ts-base.git"
+  },
+  "license": "MIT",
+  "author": "冰雪殇璃陌梦 <admin@dreamofice.cn> (https://www.dreamofice.cn)",
   "exports": {
     ".": {
       "require": "./dist/index.js",
@@ -12,6 +19,9 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -22,6 +32,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@release-it/conventional-changelog": "^5.1.1",
     "@tsconfig/esm": "^1.0.2",
     "@tsconfig/node-lts": "^18.12.1",
     "@tsconfig/strictest": "^2.0.0",
@@ -29,18 +42,12 @@
     "@typescript-eslint/parser": "^5.57.0",
     "eslint": "^8.37.0",
     "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "nano-staged": "^0.8.0",
     "prettier": "^2.8.7",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "release-it": "^15.10.3",
     "tsup": "^6.7.0",
     "typescript": "^5.0.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DreamOfIce/ts-base.git"
-  },
-  "author": "冰雪殇璃陌梦 <admin@dreamofice.cn> (https://www.dreamofice.cn)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DreamOfIce/ts-base/issues"
-  },
-  "homepage": "https://github.com/DreamOfIce/ts-base#readme"
+  }
 }
